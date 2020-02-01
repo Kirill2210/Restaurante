@@ -271,6 +271,7 @@ nav {
 	border: none;
 	border-radius: 2px;
 	border-bottom: 2px solid #b47d00;
+	cursor: pointer;
 }
 .menu__slider {
 	position: relative;
@@ -314,5 +315,102 @@ nav {
 	left: 0;
 	transform: rotate(180deg);
 }
-
-
+.find {
+	background-image: url(../images/find-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+.find__box {
+	background-image: url(../images/find-modal.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 570px;
+	width: 100%;
+	height: 330px;
+	margin: 0 auto;
+	padding: 65px;
+	text-align: center;
+	color: #000;
+}
+.find__title {
+	font-size: 28px;
+	font-style: italic;
+	margin-bottom: 40px;
+}
+.find__content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 40px;
+	margin-bottom: 40px;
+}
+.find__logo {
+	display: flex;
+	max-width: 225px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 22px;
+}
+.find__text {
+	font-size: 18px;
+	font-style: italic;
+	text-align: left;
+}
+.find__btn {
+	max-width: 130px;
+	font-style: italic;
+}
+.footer {
+	background-image: url(../images/footer-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 75px;
+	padding-bottom: 75px;
+}
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__items {
+	display: flex;
+	justify-content: space-between;
+	max-width: 520px;
+	width: 100%;
+}
+.footer__title {
+	font-size: 22px;
+	font-style: italic;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+}
+.footer__item-list a {
+	font-size: 17px;
+	color: #bbb;
+	text-transform: uppercase;
+	font-style: italic;
+	cursor: pointer;
+}
+.footer__form input {
+	padding: 9px;
+	width: 223px;
+	border: none;
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.4);
+}
+.footer__form input::placeholder {
+	font-size: 12px;
+	font-style: italic;
+	color: #fff;
+	text-transform: uppercase;
+}
+.footer__btn {
+	max-width: 90px;
+	margin-left: 23px;
+}
