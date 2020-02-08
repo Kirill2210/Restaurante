@@ -1,13 +1,31 @@
 $(function(){
 
 $('.menu__slider').slick({
-	nextArrow: false,
-	prevArrow: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+	nextArrow: true,
+	prevArrow: true,
   infinite: false,
   nextArrow: '<button type="button" class="slick-btn slick-next">next</button>',
   prevArrow: '<button type="button" class="slick-btn slick-prev">prev</button>',
-	dots: false
+	dots: false,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: false,
+        prevArrow: false,
+        dots: true
+      }
+    }
+  ]
 	});
+
+$('.header__list').on('click', function(){
+    $('.header__menu').slideToggle();
+  })
 
 
 });

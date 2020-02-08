@@ -10,6 +10,17 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+	<style>
+		.slide-1 {
+			background-image: url(images/menu-bg.png);
+		}
+		.slide-2 {
+			background-image: url(images/menu-bg.png);
+		}
+		.slide-3 {
+			background-image: url(images/menu-bg.png);
+		}
+	</style>
 	
 	<header class="header">
 		<div class="container-fluid">
@@ -17,8 +28,13 @@
 					<div class="header__logo">
 						<a href="" class="header__link"><img src="images/logo.png" alt=""></a>
 					</div>
+					<div class="header__list">
+						<div class="list"></div>
+						<div class="list"></div>
+						<div class="list"></div>
+					</div>
 					<nav>
-						<ul class="hedaer__menu">
+						<ul class="header__menu">
 							<li><a href="#">price list</a></li>
 							<li><a href="#">opening hours</a></li>
 							<li><a href="#">about us</a></li>
@@ -27,12 +43,14 @@
 					</nav>
 				</div>
 				<div class="header__content">
+					<div class="header__inner">
 					<div class="header__item">
 						<div class="header__item-title">
 							For meat
 							lovers
 						</div>
 						<a class="header__item-link" href="#">full menu</a>
+					</div>
 					</div>
 					<div class="header__inner">
 					<div class="header__item">
@@ -43,12 +61,14 @@
 						<a class="header__item-link" href="#">full menu</a>
 					</div>
 					</div>
+					<div class="header__inner">
 					<div class="header__item">
 						<div class="header__item-title">
 							see our
 							secrets
 						</div>
 						<a class="header__item-link" href="#">full menu</a>
+					</div>
 					</div>
 				</div>
 		</div>
@@ -171,7 +191,24 @@
 					</div>
 				</div>
 				<div class="menu__slider">
-					<div class="menu__slider-box" style="background-image: url(images/menu-bg.png);">
+					<div class="menu__slider-box slide-1">
+						<div class="slider-bg">
+						<div class="menu__slider-inner">
+							<div class="menu__slider-suptitle">
+								Online menu
+							</div>
+							<div class="menu__slider-title">
+								Spaghetti with fresh 
+								tomatoes and dressing
+							</div>
+							<div class="menu__slider-text">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</div>
+							<button class="menu__slider-btn" type="submit">12$ - order</button>
+						</div>
+						</div>
+					</div>
+					<div class="menu__slider-box slide-2">
 						<div class="menu__slider-inner">
 							<div class="menu__slider-suptitle">
 								Online menu
@@ -186,22 +223,7 @@
 							<button class="menu__slider-btn" type="submit">12$ - order</button>
 						</div>
 					</div>
-					<div class="menu__slider-box" style="background-image: url(images/menu-bg.png);">
-						<div class="menu__slider-inner">
-							<div class="menu__slider-suptitle">
-								Online menu
-							</div>
-							<div class="menu__slider-title">
-								Spaghetti with fresh 
-								tomatoes and dressing
-							</div>
-							<div class="menu__slider-text">
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-							</div>
-							<button class="menu__slider-btn" type="submit">12$ - order</button>
-						</div>
-					</div>
-					<div class="menu__slider-box" style="background-image: url(images/menu-bg.png);">
+					<div class="menu__slider-box slide-3">
 						<div class="menu__slider-inner">
 							<div class="menu__slider-suptitle">
 								Online menu
