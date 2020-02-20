@@ -95,7 +95,7 @@ nav {
 }
 .header__item-title {
 	font-weight: 700;
-	font-size: 38px;
+	font-size: 36px;
 	color: #000;
 }
 .header__item-link {
@@ -127,14 +127,14 @@ nav {
 	padding: 75px 0px 80px;
 }
 .menu__title {
-	width: 235px;
-	margin: 0 auto;
+	width: 100%;
+	text-align: center;
 	text-transform: uppercase;
 	font-size: 42px;
 	color: #f1ac11;
 	font-style: italic;
 }
-.menu__show {
+.menu__show a {
 	font-size: 14px;
 	font-style: italic;
 	color: #2b2b2b;
@@ -143,7 +143,7 @@ nav {
 	position: relative;
 	margin: 40px 0;
 }
-.menu__show::before {
+.menu__show a::before {
 	content: '';
 	position: absolute;
 	background-image: url(../images/check.png);
@@ -170,6 +170,28 @@ nav {
 	align-items: center;
 	margin-bottom: 40px;
 }
+@keyframes itemanimleft {
+	from {
+		transform: translateX(-2000px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+@keyframes itemanimright {
+	from {
+		transform: translateX(2000px);
+	}
+	to {
+		transform: translateX(0px);
+	}
+}
+.item-1, .item-2, .item-3 {
+	animation-name: itemanimleft;
+}
+.item-4, .item-5, .item-6 {
+	animation-name: itemanimright;
+}
 .menu__item-img {
 	width: 78px;
 	height: 78px;
@@ -186,24 +208,25 @@ nav {
 	font-size: 18px;
 	color: #2b2b2b;
 	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 .menu__item-text {
 	position: relative;
 	background-color: #fff;
-	z-index: 5;
-	width: max-content;
 	padding-right: 3px;
+	display: inline-block;
+	z-index: 5;
 }
 .menu__item-coin {
-	position: absolute;
-	width: 44px;
+	max-width: 44px;
+	width: 100%;
 	height: 27px;
 	background-image: url(../images/coin-bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	right: 0;
-	top: 0;
 	text-align: center;
 	font-weight: 700;
 	font-size: 14px;
@@ -277,7 +300,6 @@ nav {
 	max-width: 345px;
 }
 .menu__slider-btn {
-	max-width: 100px;
 	padding: 11px;
 	font-size: 14px;
 	font-style: italic;
@@ -310,6 +332,7 @@ nav {
 	transform: translateY(-50%);
 	z-index: 7;
 	outline: none;
+	cursor: pointer;
 }
 .slick-btn::before {
 	content: '';
@@ -374,6 +397,16 @@ nav {
 	padding: 65px;
 	text-align: center;
 	color: #000;
+	animation-name: opacity;
+	animation-duration: 2s;
+}
+@keyframes opacity {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
 }
 .find__title {
 	font-size: 28px;
@@ -402,7 +435,6 @@ nav {
 	text-align: left;
 }
 .find__btn {
-	max-width: 130px;
 	font-style: italic;
 }
 .footer {
@@ -423,13 +455,16 @@ nav {
 	max-width: 520px;
 	width: 100%;
 }
+.footer__item {
+	flex-basis: 30%;
+}
 .footer__title {
 	font-size: 22px;
 	font-style: italic;
 	color: #fff;
 	text-transform: uppercase;
 	margin-bottom: 25px;
-	text-align: center;
+	text-align: left;
 }
 .footer__item-list a {
 	font-size: 17px;
@@ -437,6 +472,10 @@ nav {
 	text-transform: uppercase;
 	font-style: italic;
 	cursor: pointer;
+	transition: all .3s;
+}
+.footer__item-list a:hover {
+	color: #fff;
 }
 .footer__form input {
 	padding: 9px;
@@ -452,7 +491,6 @@ nav {
 	text-transform: uppercase;
 }
 .footer__btn {
-	max-width: 90px;
 	margin-left: 23px;
 }
 
@@ -539,6 +577,9 @@ nav {
 		text-align: center;
 		margin-bottom: 20px;
 	}
+	.footer__title {
+		text-align: center;
+	} 
 }
 @media(max-width: 450px) {
 	.header__item-title {
@@ -549,6 +590,16 @@ nav {
 	}
 	.menu__item-img {
 		margin-bottom: 20px;
+	}
+	
+}
+@media(max-width: 420px) {
+	.footer__form form {
+		text-align: center;
+	}
+	.footer__btn {
+		margin: 20px auto 0px;
+		display: block;
 	}
 }
 @media(max-width: 400px) {
